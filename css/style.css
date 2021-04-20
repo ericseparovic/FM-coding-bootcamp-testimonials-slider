@@ -1,0 +1,175 @@
+/** @format */
+/** @format */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 10rem;
+}
+
+.container__gallery {
+  padding: 5%;
+  background-image: url(/images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex-basis: 50%;
+}
+.container__gallery .gallery__image {
+  position: relative;
+}
+.container__gallery .gallery__image .image_perfil {
+  width: 100%;
+  -webkit-box-shadow: 14px 22px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 22px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 22px 31px -7px rgba(0, 0, 0, 0.75);
+}
+
+.container__cite {
+  flex-basis: 50%;
+}
+.container__cite section {
+  background-image: url(/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position-x: 7rem;
+  background-position-y: 0rem;
+  padding: 1rem;
+  position: absolute;
+  width: 44%;
+  top: 30%;
+  right: 38%;
+  z-index: 1;
+}
+.container__cite blockquote {
+  font-size: 1.7rem;
+  font-family: "Inter";
+  line-height: 2.3rem;
+  font-weight: 300;
+}
+.container__cite cite {
+  font-size: 1.5rem;
+  color: #202046;
+  font-weight: bold;
+  margin-left: 2rem;
+  font-family: "Inter";
+}
+.container__cite cite span {
+  color: #babacf;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 22%;
+  height: 10%;
+  border-radius: 2rem;
+  -webkit-box-shadow: 14px 22px 31px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 22px 31px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 22px 31px -7px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  bottom: -4%;
+  left: 15%;
+}
+.button img {
+  width: 10%;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .container__cite {
+    width: 60%;
+    height: auto;
+  }
+  .container__cite section {
+    position: relative;
+    width: auto;
+    top: auto;
+    right: auto;
+    background-size: 5rem;
+    background-position: center top;
+    text-align: center;
+  }
+  .container__cite blockquote {
+    font-size: 1.2rem;
+    font-family: "Inter";
+    line-height: 2.3rem;
+    font-weight: 300;
+  }
+  .container__cite cite {
+    font-size: 1rem;
+    color: #202046;
+    font-weight: bold;
+    margin-left: 2rem;
+    font-family: "Inter";
+  }
+  .container__cite cite span {
+    color: #babacf;
+  }
+
+  .container__gallery {
+    height: auto;
+    width: 40%;
+    padding: 2rem;
+  }
+
+  .button {
+    display: flex;
+    bottom: -3%;
+    left: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    padding: 15rem 0 15rem 0;
+  }
+
+  .container__gallery {
+    height: auto;
+    min-width: 25rem;
+    padding: 2rem;
+  }
+
+  .container__cite {
+    width: 100%;
+  }
+  .container__cite section {
+    position: relative;
+    width: auto;
+    top: auto;
+    right: auto;
+    background-size: 5rem;
+    background-position: center top;
+    text-align: center;
+  }
+
+  body {
+    background-size: 20rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
